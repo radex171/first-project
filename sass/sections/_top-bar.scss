@@ -1,0 +1,32 @@
+.top-bar {
+    height: 40px;
+    width: 100%;
+
+    .blank-col {
+        content: '';
+        width: 35%;
+        height:40px;
+        margin: 0 1px;
+        float: left;
+        background-color: white;   
+    }
+
+    .cash {
+        display: inline-block;
+        height: 40px;
+        width: 20%;
+        background-color: white;
+
+        img {
+            padding: 12px;
+            height: 15px;
+            float: left;
+        }
+
+        .wallet-value {
+            margin: 10px 0;
+            font-size: 18px;
+            float: left;  
+        }
+    }
+}
