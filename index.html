@@ -1,31 +1,60 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
 <html lang="pl">
     <head>
         <meta charset="utf-8">
         <title>js-blog</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     </head>
     
     <body>
         <section class="container">
             
             <nav class="sidebar">
-                tutaj ędzie menu po lewej
+                <div class="burger-menu">
+                    <div class="text">Just do it</div>
+                    <div class="button">
+                        <div class="hamb-menu">
+                            <span class="hamb-box">
+                                <span class="box-line"></span>
+                            </span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="list-menu">
+                    <ul>
+                       <li><a href="general.html"><img src="images/icons/general.svg">General</a></li>
+                       <li><a href="details.html"><img src="images/icons/details.svg">details</a></li>
+                       <li><a href="Links.html"><img src="images/icons/links.svg">Links</a></li>
+                       <li><a href="Banners.html"><img src="images/icons/banners.svg">Banners</a></li>
+                       <li><a href="Personal_data.html"><img src="images/icons/personaldata.svg">Personal data</a></li>
+                       <li><a href="Payout.html"><img src="images/icons/payout.svg">Payout</a></li>
+                       <li><a href="Postback.html"><img src="images/icons/postback.svg">Postback</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="under-menu">
+                    <p>YOUR MENAGER</p>
+                    <div class="listMenagers">
+                        <img src="images/icons/personaldata.svg"> <span class="nameMenager">Mikhael E.</span>
+                    </div>
+                </div>
             </nav>
 
             <nav class="top-bar">
                 tutaj będzie górne menu
             </nav>
 
-            <div class="general-stat">
-                tutaj będą statystki
+            <div class="content">
+            Witaj w panelu administracyjnym
             </div>
 
-            <div class="general-links">
-                tutaj będą linki z zaklądki general
-            </div>
+           
 
         </section>
+        <script src="js/script.js"></script>
+
     </body>
 </html>

@@ -1,6 +1,9 @@
 body{
     margin: 0;
 }
+
+// general grid //
+
 .container {
     display: grid;
     height: 99vh;
@@ -8,24 +11,29 @@ body{
     grid-template-rows: 50px 1fr 1fr;
     grid-template-areas:
     "sidebar top-bar"
-    "sidebar general-stat"
-    "sidebar general-links";
+    "sidebar content"
+    "sidebar content";
+    grid-gap: 10px;
     border: 1px black solid;
-
-    }
+}
     .sidebar {
         
-        grid-area: sidebar;  
-        border: 1px black solid;
+    grid-area: sidebar;  
+    border: 1px black solid;
     }
     .top-bar {
         
         margin-top: 10px;
         margin-right: 10px;
-        grid-area: top-bar;
-        border: 1px black solid;
+    grid-area: top-bar;
+    border: 1px black solid;
 
     }
+    .content{
+        grid-area: content;
+    }
+
+    //-------------------------//
 
     .general-stat {
         grid-area: general-stat;
