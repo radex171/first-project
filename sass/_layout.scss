@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+.container {
+    display: grid;
+    height: 99vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-areas:
+    "sidebar top-bar"
+    "sidebar general-stat"
+    "sidebar general-links";
+    border: 1px black solid;
+
+    }
+    .sidebar {
+        
+        grid-area: sidebar;  
+        border: 1px black solid;
+    }
+    .top-bar {
+        
+        margin-top: 10px;
+        margin-right: 10px;
+        grid-area: top-bar;
+        border: 1px black solid;
+
+    }
+
+    .general-stat {
+        grid-area: general-stat;
+        border: 1px black solid;
+        margin-right: 10px;
+    }
+
+    .general-links {
+        grid-area: general-links;
+        border: 1px black solid;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
