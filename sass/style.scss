@@ -1,12 +1,7 @@
 //--layout--//
 @import 'layout';
-
+@import 'variables';
 //--sections--//
 @import 'mixins';
 @import 'sections/sidebar';
-@import 'sections/top-bar';
-@import 'variables';
-
-//--components--//
-@import 'components/burger-menu';
-@import 'components/content'
+@import 'sections/content';

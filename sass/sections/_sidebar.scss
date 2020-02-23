@@ -1,15 +1,18 @@
 //-----global-----/
 .sidebar {
-    width: 215px;
+    width: 190px;
+    height: 100%;
     background-color: rgb(0, 0, 0);
-    padding-top: 20px;
+    padding-top: 15px;
 
     .text {
-        width: 70%;
+        font-family: $paragraph-font;
+        width: 60%;
+        padding-left: 10px;
        text-align: center;
         display: inline-block;
         font-size: 26px;
-        font-family: 'Merienda', cursive;
+        
         color: white; 
     }
 
@@ -33,14 +36,13 @@
                
                 a {
                     margin: 0;
-                    font-size: 20px;
+                    font-size: 20
+                    px;
                     list-style-type: none;
                     text-decoration: none;
                     color: grey;
                    
                     &:hover{
-                        padding-left: 20px;
-                        font-size: 22px;
                         list-style-type: none ;
                         border-left: 4px rgb(219, 121, 8) solid;
                         color: white;
@@ -72,7 +74,7 @@
     font-size: 20px;
 
     .nameMenager{
-        font-size: 18px;
+        font-size: 16px;
         color: rgb(212, 212, 212);
         }
 
@@ -88,3 +90,4 @@
     visibility: collapse;
     max-height: 0;
 }
+@import '../components/burger-menu';

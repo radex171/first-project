@@ -6,9 +6,9 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  height: 99vh;
-  -ms-grid-columns: 1fr 10fr;
-      grid-template-columns: 1fr 10fr;
+  color: lightgray;
+  -ms-grid-columns: 1fr 11fr;
+      grid-template-columns: 1fr 11fr;
   -ms-grid-rows: 50px 1fr 1fr;
       grid-template-rows: 50px 1fr 1fr;
   grid-template-areas: "sidebar top-bar" "sidebar content" "sidebar content";
@@ -21,7 +21,7 @@ body {
 }
 
 .top-bar {
-  margin: 10px 10px 0 0;
+  margin: 0;
   grid-area: top-bar;
 }
 
@@ -42,18 +42,23 @@ body {
   margin-bottom: 10px;
 }
 
+/* Colors */
+/* Font sizes */
+/* Fonts */
 .sidebar {
-  width: 215px;
+  width: 190px;
+  height: 100%;
   background-color: black;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .sidebar .text {
-  width: 70%;
+  font-family: "Open Sans", Helvetica, Arial;
+  width: 60%;
+  padding-left: 10px;
   text-align: center;
   display: inline-block;
   font-size: 26px;
-  font-family: 'Merienda', cursive;
   color: white;
 }
 
@@ -78,15 +83,13 @@ body {
 
 .sidebar .list-menu ul li a {
   margin: 0;
-  font-size: 20px;
+  font-size: 20 px;
   list-style-type: none;
   text-decoration: none;
   color: grey;
 }
 
 .sidebar .list-menu ul li a:hover {
-  padding-left: 20px;
-  font-size: 22px;
   list-style-type: none;
   border-left: 4px #db7908 solid;
   color: white;
@@ -112,7 +115,7 @@ body {
 }
 
 .under-menu .nameMenager {
-  font-size: 18px;
+  font-size: 16px;
   color: #d4d4d4;
 }
 
@@ -128,49 +131,13 @@ body {
   max-height: 0;
 }
 
-.top-bar {
-  height: 40px;
-  width: 100%;
-}
-
-.top-bar .blank-col {
-  content: '';
-  width: 35%;
-  height: 40px;
-  margin: 0 1px;
-  float: left;
-  background-color: white;
-}
-
-.top-bar .cash {
-  display: inline-block;
-  height: 40px;
-  width: 20%;
-  background-color: white;
-}
-
-.top-bar .cash img {
-  padding: 12px;
-  height: 15px;
-  float: left;
-}
-
-.top-bar .cash .wallet-value {
-  margin: 10px 0;
-  font-size: 18px;
-  float: left;
-}
-
-/* Colors */
-/* Font sizes */
-/* Fonts */
 .button {
-  width: 40px;
-  height: 30px;
-  top: 5px;
+  width: 25px;
+  height: 15px;
   cursor: pointer;
   display: inline-block;
   position: relative;
+  left: 15px;
 }
 
 .button .hamb-menu {
@@ -183,8 +150,8 @@ body {
 }
 
 .button .hamb-menu .hamb-box {
-  width: 35px;
-  height: 24px;
+  width: 25px;
+  height: 15px;
   display: inline-block;
   position: relative;
 }
@@ -233,7 +200,255 @@ body {
   transform: translateY(-10px) rotate(-125deg);
 }
 
+.top-bar {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 22fr 6fr 2fr 6fr 2fr;
+      grid-template-columns: 22fr 6fr 2fr 6fr 2fr;
+  grid-template-areas: "blank cash notification profile logout";
+}
+
+.blank-col {
+  content: '';
+  height: 60px;
+  background-color: white;
+  grid-area: blank;
+}
+
+.cash {
+  height: 60px;
+  background-color: white;
+  float: left;
+  grid-area: cash;
+  margin: 0 1px;
+}
+
+.cash img {
+  padding: 19px 10px 0 13px;
+  height: 18px;
+  float: left;
+}
+
+.cash .wallet-value {
+  margin: 18px 10px 0 10px;
+  font-size: 18px;
+  float: left;
+}
+
+.cash .image-menu-wallet {
+  height: 8px;
+  padding: 28px 0 0 16px;
+}
+
+.notification {
+  height: 60px;
+  background-color: white;
+  float: left;
+  grid-area: notification;
+}
+
+.notification img {
+  width: 100%;
+  height: 20px;
+  padding: 20px 0 0 0;
+}
+
+.profile {
+  height: 60px;
+  background-color: white;
+  margin: 0 1px;
+  grid-area: profile;
+}
+
+.profile img {
+  height: 20px;
+  padding: 19px  0 0 16px;
+  float: left;
+}
+
+.profile .user-name {
+  margin: 22px 0 0 15px;
+  font-size: 13px;
+  float: left;
+}
+
+.logout {
+  float: left;
+  background-color: white;
+  grid-area: logout;
+  margin: 0;
+}
+
+.logout img {
+  height: 14px;
+  padding: 22px 0 0 25px;
+}
+
 .content {
-  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  font-family: "Open Sans", Helvetica, Arial;
+  height: 90vh;
+  width: 97%;
+  margin: 30px 2% 0 1.3%;
+  -ms-grid-rows: 1fr 11fr;
+      grid-template-rows: 1fr 11fr;
+  grid-template-areas: "general-statistic " "links";
+  grid-gap: 1fr;
+}
+
+.general-statistic {
+  grid-area: general-statistic;
+  width: 100%;
+  margin-top: 0;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.general-statistic p {
+  padding-top: 14px;
+}
+
+.general-statistic .title-general-statistic {
+  background-color: white;
+  height: 46px;
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.general-statistic .title-general-statistic p {
+  margin-top: 0;
+  left: 10px;
+  padding-left: 20px;
+}
+
+.date {
+  width: 100%;
+  height: 108px;
+  background-color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.date .date-picker {
+  width: 31%;
+  height: 42px;
+  margin: 0;
+  padding: 32px 0 0 32.8%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.date .date-picker .border-pickers {
+  width: 100%;
+  height: 39px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px lightgray solid;
+}
+
+.date .date-picker .border-pickers .first-input, .date .date-picker .border-pickers .second-input {
+  width: 42%;
+  height: 38px;
+  border: none;
+  margin-right: 3.5%;
+}
+
+.date .date-picker .border-pickers .first-input input, .date .date-picker .border-pickers .second-input input {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.date .date-picker .border-pickers .icon-calendar {
+  width: 4%;
+  height: 12px;
+  margin-top: 8px;
+}
+
+.date .date-picker .border-pickers .line {
+  content: none;
+  width: 0.7%;
+  height: 30px;
+  border-left: 1px solid lightgray;
+  margin: 4px 0.6%;
+}
+
+.date .refresh-button {
+  background-color: orange;
+  height: 40px;
+  width: 40px;
+  margin: 31px 0 0 1.2%;
+  border-radius: 3px;
+}
+
+.date .refresh-button img {
+  height: 20px;
+  width: 20px;
+  margin: 10px 0 0 10px;
+  filter: invert(100%);
+}
+
+.chart {
+  margin-top: 1px;
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  display: inline-block;
+}
+
+.chart .table {
+  width: 82%;
+  padding-left: 18%;
+  padding-top: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.chart .table .name-cell {
+  height: 24px;
+  width: 315px;
+  font-size: 18px;
+  margin: 0 60px 18px 0;
+  border-bottom: 1px grey solid;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.chart .table .name-cell span {
+  width: 50%;
+  text-align: left;
+}
+
+.chart .table .name-cell .value-cell {
+  height: 20px;
+  width: 50%;
+  text-align: right;
+}
+
+.link-row {
+  grid-area: links;
+}
+
+.link-row .links-title {
+  width: 100%;
+}
+
+.link-row .links {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

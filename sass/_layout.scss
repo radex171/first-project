@@ -7,8 +7,8 @@ body {
 
 .container {
     display: grid;
-    height: 99vh;
-    grid-template-columns: 1fr 10fr;
+    color: lightgray;
+    grid-template-columns: 1fr 11fr;
     grid-template-rows: 50px 1fr 1fr;
     grid-template-areas:
     "sidebar top-bar"
@@ -17,12 +17,12 @@ body {
     
 }
     .sidebar {
-        margin:0 ;
+        margin: 0 ;
         width: 100%;
         grid-area: sidebar;  
     }
     .top-bar {
-        margin: 10px 10px 0 0;
+        margin: 0;
         grid-area: top-bar;
 
     }
