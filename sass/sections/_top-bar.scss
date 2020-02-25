@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 22fr 6fr 2fr 6fr 2fr;
+    color: $dark-gray;
+    font-weight: bold;
+    grid-template-columns: 47fr 13fr 4fr 12fr 4fr;
     grid-template-areas:
     "blank cash notification profile logout";
     
@@ -24,20 +26,20 @@
         grid-area: cash;
         margin: 0 1px;
         img {
-            padding: 19px 10px 0 13px;
+            padding: 19px 4px 0 22px;
             height: 18px;
             float: left;
         }
 
         .wallet-value {
-            margin: 18px 10px 0 10px;
+            margin: 18px 10px 0 16px;
             font-size: 18px;
             float: left;  
         }
 
         .image-menu-wallet {
             height: 8px;
-            padding: 28px 0 0 16px;
+            padding: 28px 0 0 12px;
         }
     }
     .notification {
@@ -61,7 +63,7 @@
         img {
             
             height: 20px;
-            padding: 19px  0 0 16px;
+            padding: 20px  0 0 14px;
             float: left;
         }
 
@@ -79,6 +81,6 @@
         margin: 0;
         img {
             height: 14px;
-            padding: 22px 0 0 25px ;
+            padding: 22px 0 0 20px ;
         }
     }

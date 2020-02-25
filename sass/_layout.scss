@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: lightgray;
+    background-color: $light-gray
+    ;
     font-family: $brand-font;
 }
 
@@ -27,8 +28,9 @@ body {
         grid-area: top-bar;
 
     }
-    .content{
+    .content {
         grid-area: content;
+     
     }
 
     //-------------------------//

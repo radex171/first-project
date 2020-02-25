@@ -7,8 +7,8 @@
     position: fixed;
     .text {
         width: 50%;
-        padding-left: 10px;
-        font-size: 26px;
+        padding-left: 16px;
+        
 
         img {
             float: left;
@@ -18,26 +18,29 @@
     //-----menu----///
     
     .list-menu {
-        height: 300px;
+        height: 322px;
         border-bottom: 2px solid $dark-gray;
       
         ul {
+            margin-top: 30px;
             padding-left: 0;
+            
 
             li{
-                height: 25px;
-                margin: 12px 0;
+                height: 30px;
+                margin: 4px 0 12px 0;
+                
 
                 &:hover {
                    background-color: $dark-gray;
                    border-radius: 0 30px 30px 0;
                    color: white;
                 }
+
                
                 a {
                     margin: 0;
-                    font-size: 20
-                    px;
+                    font-size: 13px;
                     list-style-type: none;
                     text-decoration: none;
                     color: grey;
@@ -53,10 +56,11 @@
                     }
                     
                     img {
-                        padding-left: 20px;
-                        margin-right: 20px;
-                        height: 14px;
-                        width: 20px;
+                        padding-left: 18px;
+                        padding-top: 4px;;
+                        margin-right: 10px;
+                        height: 16px;
+                        width: 18px;
                         filter: invert(70%);
                     }
                 }
@@ -69,20 +73,33 @@
 
 .under-menu {
     color: white;
-    display: inline;
+    display: inline-block;
     text-align: center;
-    font-size: 20px;
+    font-size: 13px;
+    margin-left: 11%;
 
-    .nameMenager{
-        font-size: 16px;
+    p {
+        margin: 10px 0;
+    }
+
+    .nameMenager {
+        font-size: 14px;
         color: rgb(212, 212, 212);
         }
 
-    .listMenagers img {
-        filter: invert(85%);
-        height: 20px;
-        margin-right: 10px;
+    .listMenagers {
+        
+        width: 100%;
+        margin: 11px 0 0 19%;
         display: inline-block;
+
+    
+        img {
+            filter: invert(85%);
+            height: 20px;
+            margin-right: 10px;
+            display: inline-block;
+        }
     }
 }
 
