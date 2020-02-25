@@ -5,8 +5,8 @@
     font-family: $brand-font;
 
     height: 90vh;
-    width: 90.1%;
-    margin: 30px 2% 0 8.4%;
+    width: 96.8%;
+    margin: 30px 2% 0 1.4%;
     grid-template-rows: 1fr 11fr;
     grid-template-areas: 
     "general-statistic "
@@ -205,9 +205,9 @@
         
         p {
             margin: 0;
-            padding: 2px 0 0 9%;
+            padding: 2px 0 0 0;
             color: white;
-            font-size: 16px;
+            font-size: 17px;
         }
     }
 
@@ -217,7 +217,7 @@
        margin-top: 23px;
 
         li {
-            width: 80%;
+            width: 85%;
             height: 57px;
             margin-left: 18%;
             border-top: 1px lightgray solid;
@@ -234,30 +234,41 @@
 
             .link-position {
                 grid-area: link;
-                padding: 17px 0 0 32%;
+                padding: 17px 0 0 26%;
                 
                 a {
                     font-size: 14px;
                     text-decoration: none;
-                    color: $light-gray;
+                    color: $dark-gray;
                     font-family: $brand-font;
                 }
             }
 
+            
+
             .icon-position {
                 grid-area: icon-link;
-                width: 60px;
-                padding: 17px 0 0 0;
+                width: 91px;
+                padding: 22px 0 0 17%;
 
                 img {
-                    display: none;
-                    width: 20px;
-                    height: 20px;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    float: left;
+                    padding-left: 19px;
+                   
                 }
             }
+            
         }
         .last-line {
             border-bottom: 1px lightgray solid;
+        }
+
+        .second-button {
+            width: 15%;
+            margin: 9px 0 0 53%;
         }
     }
 }

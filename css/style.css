@@ -15,12 +15,13 @@ body {
       grid-template-columns: 1fr 11fr;
   -ms-grid-rows: 50px 1fr 1fr;
       grid-template-rows: 50px 1fr 1fr;
+  grid-column-gap: 0.2%;
   grid-template-areas: "sidebar top-bar" "sidebar content" "sidebar content";
 }
 
 .sidebar {
   margin: 0;
-  width: 100%;
+  width: 190px;
   grid-area: sidebar;
 }
 
@@ -48,43 +49,49 @@ body {
 
 .sidebar {
   width: 190px;
-  height: 100%;
+  height: auto;
   background-color: #191919;
   padding-top: 15px;
-  position: fixed;
 }
 
-.sidebar .text {
+.sidebar .container-sidebar {
+  height: 100%;
+  width: 190px;
+  position: fixed;
+  background-color: #191919;
+}
+
+.sidebar .container-sidebar .text {
   width: 50%;
   padding-left: 16px;
 }
 
-.sidebar .text img {
+.sidebar .container-sidebar .text img {
   float: left;
 }
 
-.sidebar .list-menu {
+.sidebar .container-sidebar .list-menu {
   height: 322px;
   border-bottom: 2px solid #9c9c9c;
 }
 
-.sidebar .list-menu ul {
+.sidebar .container-sidebar .list-menu ul {
   margin-top: 30px;
   padding-left: 0;
 }
 
-.sidebar .list-menu ul li {
+.sidebar .container-sidebar .list-menu ul li {
   height: 30px;
   margin: 4px 0 12px 0;
 }
 
-.sidebar .list-menu ul li:hover {
+.sidebar .container-sidebar .list-menu ul li:hover {
   background-color: #9c9c9c;
   border-radius: 0 30px 30px 0;
   color: white;
 }
 
-.sidebar .list-menu ul li a {
+.sidebar .container-sidebar .list-menu ul li a {
   margin: 0;
   font-size: 13px;
   list-style-type: none;
@@ -92,17 +99,17 @@ body {
   color: grey;
 }
 
-.sidebar .list-menu ul li a:hover {
+.sidebar .container-sidebar .list-menu ul li a:hover {
   list-style-type: none;
   border-left: 4px #db7908 solid;
   color: white;
 }
 
-.sidebar .list-menu ul li a:hover img {
+.sidebar .container-sidebar .list-menu ul li a:hover img {
   filter: invert(100%);
 }
 
-.sidebar .list-menu ul li a img {
+.sidebar .container-sidebar .list-menu ul li a img {
   padding-left: 18px;
   padding-top: 4px;
   margin-right: 10px;
@@ -111,7 +118,7 @@ body {
   filter: invert(70%);
 }
 
-.under-menu {
+.sidebar .under-menu {
   color: white;
   display: inline-block;
   text-align: center;
@@ -119,29 +126,29 @@ body {
   margin-left: 11%;
 }
 
-.under-menu p {
+.sidebar .under-menu p {
   margin: 10px 0;
 }
 
-.under-menu .nameMenager {
+.sidebar .under-menu .nameMenager {
   font-size: 14px;
   color: #d4d4d4;
 }
 
-.under-menu .listMenagers {
+.sidebar .under-menu .listMenagers {
   width: 100%;
   margin: 11px 0 0 19%;
   display: inline-block;
 }
 
-.under-menu .listMenagers img {
+.sidebar .under-menu .listMenagers img {
   filter: invert(85%);
   height: 20px;
   margin-right: 10px;
   display: inline-block;
 }
 
-.hidden {
+.sidebar .hidden {
   visibility: collapse;
   max-height: 0;
 }
@@ -223,8 +230,8 @@ body {
   display: grid;
   color: #9c9c9c;
   font-weight: bold;
-  -ms-grid-columns: 47fr 13fr 4fr 12fr 4fr;
-      grid-template-columns: 47fr 13fr 4fr 12fr 4fr;
+  -ms-grid-columns: 56% 15fr 4fr 13fr 5fr;
+      grid-template-columns: 56% 15fr 4fr 13fr 5fr;
   grid-template-areas: "blank cash notification profile logout";
 }
 
@@ -244,7 +251,7 @@ body {
 }
 
 .cash img {
-  padding: 19px 4px 0 22px;
+  padding: 19px 1% 0 10%;
   height: 18px;
   float: left;
 }
@@ -281,13 +288,13 @@ body {
 }
 
 .profile img {
-  height: 20px;
-  padding: 20px  0 0 14px;
+  height: 16px;
+  padding: 22px  0 0 7%;
   float: left;
 }
 
 .profile .user-name {
-  margin: 22px 0 0 15px;
+  margin: 22px 0 0 5%;
   font-size: 13px;
   float: left;
 }
@@ -309,8 +316,8 @@ body {
   display: grid;
   font-family: "Open Sans", Helvetica, Arial;
   height: 90vh;
-  width: 90.1%;
-  margin: 30px 2% 0 8.4%;
+  width: 96.8%;
+  margin: 30px 2% 0 1.4%;
   -ms-grid-rows: 1fr 11fr;
       grid-template-rows: 1fr 11fr;
   grid-template-areas: "general-statistic " "links";
@@ -519,9 +526,9 @@ body {
 
 .links button p {
   margin: 0;
-  padding: 2px 0 0 9%;
+  padding: 2px 0 0 0;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .links .links-list {
@@ -531,7 +538,7 @@ body {
 }
 
 .links .links-list li {
-  width: 80%;
+  width: 85%;
   height: 57px;
   margin-left: 18%;
   border-top: 1px lightgray solid;
@@ -550,29 +557,44 @@ body {
 
 .links .links-list li .link-position {
   grid-area: link;
-  padding: 17px 0 0 32%;
+  padding: 17px 0 0 26%;
 }
 
 .links .links-list li .link-position a {
   font-size: 14px;
   text-decoration: none;
-  color: #f5f5f2;
+  color: #9c9c9c;
   font-family: "Open Sans", Helvetica, Arial;
 }
 
 .links .links-list li .icon-position {
   grid-area: icon-link;
-  width: 60px;
-  padding: 17px 0 0 0;
+  width: 91px;
+  padding: 22px 0 0 17%;
 }
 
 .links .links-list li .icon-position img {
-  display: none;
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  padding-left: 19px;
 }
 
 .links .links-list .last-line {
   border-bottom: 1px lightgray solid;
+}
+
+.links .links-list .second-button {
+  width: 15%;
+  margin: 9px 0 0 53%;
+}
+
+@media (max-width: 1125px) {
+  .top-bar {
+    -ms-grid-columns: 35% 8fr 2fr 8fr 2fr;
+        grid-template-columns: 35% 8fr 2fr 8fr 2fr;
+    grid-template-areas: "blank cash notification profile logout";
+  }
 }
 /*# sourceMappingURL=style.css.map */

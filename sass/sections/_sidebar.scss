@@ -1,110 +1,117 @@
 //-----global-----/
 .sidebar {
     width: 190px;
-    height: 100%;
+    height: auto;
     background-color: $paragraph-color;
     padding-top: 15px;
-    position: fixed;
-    .text {
-        width: 50%;
-        padding-left: 16px;
-        
+   
 
-        img {
-            float: left;
-        }
-    }
-
-    //-----menu----///
-    
-    .list-menu {
-        height: 322px;
-        border-bottom: 2px solid $dark-gray;
-      
-        ul {
-            margin-top: 30px;
-            padding-left: 0;
+    .container-sidebar {
+        height: 100%;
+        width: 190px;
+        position: fixed;
+        background-color: $paragraph-color;
+        .text {
+            width: 50%;
+            padding-left: 16px;
             
 
-            li{
-                height: 30px;
-                margin: 4px 0 12px 0;
+            img {
+                float: left;
+            }
+        }
+
+        //-----menu----///
+        
+        .list-menu {
+            height: 322px;
+            border-bottom: 2px solid $dark-gray;
+        
+            ul {
+                margin-top: 30px;
+                padding-left: 0;
                 
 
-                &:hover {
-                   background-color: $dark-gray;
-                   border-radius: 0 30px 30px 0;
-                   color: white;
-                }
-
-               
-                a {
-                    margin: 0;
-                    font-size: 13px;
-                    list-style-type: none;
-                    text-decoration: none;
-                    color: grey;
-                   
-                    &:hover{
-                        list-style-type: none ;
-                        border-left: 4px rgb(219, 121, 8) solid;
-                        color: white;
-
-                        img {
-                            filter: invert(100%);
-                        }    
-                    }
+                li{
+                    height: 30px;
+                    margin: 4px 0 12px 0;
                     
-                    img {
-                        padding-left: 18px;
-                        padding-top: 4px;;
-                        margin-right: 10px;
-                        height: 16px;
-                        width: 18px;
-                        filter: invert(70%);
+
+                    &:hover {
+                    background-color: $dark-gray;
+                    border-radius: 0 30px 30px 0;
+                    color: white;
+                    }
+
+                
+                    a {
+                        margin: 0;
+                        font-size: 13px;
+                        list-style-type: none;
+                        text-decoration: none;
+                        color: grey;
+                    
+                        &:hover{
+                            list-style-type: none ;
+                            border-left: 4px rgb(219, 121, 8) solid;
+                            color: white;
+
+                            img {
+                                filter: invert(100%);
+                            }    
+                        }
+                        
+                        img {
+                            padding-left: 18px;
+                            padding-top: 4px;;
+                            margin-right: 10px;
+                            height: 16px;
+                            width: 18px;
+                            filter: invert(70%);
+                        }
                     }
                 }
             }
         }
     }
-}
 
-//----------menagerList----------//
+    //----------menagerList----------//
 
-.under-menu {
-    color: white;
-    display: inline-block;
-    text-align: center;
-    font-size: 13px;
-    margin-left: 11%;
-
-    p {
-        margin: 10px 0;
-    }
-
-    .nameMenager {
-        font-size: 14px;
-        color: rgb(212, 212, 212);
-        }
-
-    .listMenagers {
-        
-        width: 100%;
-        margin: 11px 0 0 19%;
+    .under-menu {
+        color: white;
         display: inline-block;
+        text-align: center;
+        font-size: 13px;
+        margin-left: 11%;
 
-    
-        img {
-            filter: invert(85%);
-            height: 20px;
-            margin-right: 10px;
+        p {
+            margin: 10px 0;
+        }
+
+        .nameMenager {
+            font-size: 14px;
+            color: rgb(212, 212, 212);
+            }
+
+        .listMenagers {
+            
+            width: 100%;
+            margin: 11px 0 0 19%;
             display: inline-block;
+
+        
+            img {
+                filter: invert(85%);
+                height: 20px;
+                margin-right: 10px;
+                display: inline-block;
+            }
         }
     }
-}
 
-.hidden {
-    visibility: collapse;
-    max-height: 0;
+    .hidden {
+        visibility: collapse;
+        max-height: 0;
+    }
 }
 @import '../components/burger-menu';

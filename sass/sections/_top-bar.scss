@@ -6,7 +6,7 @@
     display: grid;
     color: $dark-gray;
     font-weight: bold;
-    grid-template-columns: 47fr 13fr 4fr 12fr 4fr;
+    grid-template-columns: 56% 15fr 4fr 13fr 5fr;
     grid-template-areas:
     "blank cash notification profile logout";
     
@@ -26,7 +26,7 @@
         grid-area: cash;
         margin: 0 1px;
         img {
-            padding: 19px 4px 0 22px;
+            padding: 19px 1% 0 10%;
             height: 18px;
             float: left;
         }
@@ -62,13 +62,13 @@
         grid-area: profile;
         img {
             
-            height: 20px;
-            padding: 20px  0 0 14px;
+            height: 16px;
+            padding: 22px  0 0 7%;
             float: left;
         }
 
         .user-name {
-            margin: 22px 0 0 15px;
+            margin: 22px 0 0 5%;
             font-size: 13px;
             float: left;
         }

@@ -1,0 +1,8 @@
+@media (max-width: 1125px){ 
+    .top-bar {
+        grid-template-columns: 35% 8fr 2fr 8fr 2fr;
+        grid-template-areas:
+        "blank cash notification profile logout";
+    }
+       
+}
