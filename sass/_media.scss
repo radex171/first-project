@@ -1,8 +1,93 @@
-@media (max-width: 1125px){ 
+@media (max-width: 1155px){ 
     .top-bar {
         grid-template-columns: 35% 8fr 2fr 8fr 2fr;
         grid-template-areas:
         "blank cash notification profile logout";
     }
-       
+
+    .content {
+    
+        .chart {
+            height: 686px;
+
+            .table {
+                display: inline-block;
+
+                .name-cell {
+                    width: 45%;
+                    margin: 20px 14%;
+                }
+            }
+            p {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .chart-images img {
+            width: 80%;
+            }
+
+            .date {
+
+                .date-picker {
+                    padding-top: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 920px){
+    .container {
+        grid-template-columns: 1fr 11fr;
+        grid-template-rows:1fr;
+        grid-template-areas:
+        "sidebar content"
+        "sidebar content"
+        "top-bar content";
+    }
+    .sidebar {
+        height: auto;
+        padding: 0;
+        .container-sidebar {
+            height: 75%;
+            position: fixed;
+        }
+   }
+
+   .top-bar {
+    
+    width: 190px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    color: $dark-gray;
+    font-weight: bold;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "profile"
+    "cash"
+    "notification"
+    "logout";
+    position: fixed;
+    top:695px;
+    }
+    .profile, .cash, .notification, .logout {
+        
+        margin: 0;
+        padding: 0;
+        background-color: $paragraph-color;
+
+        img {
+            filter: invert(70%);
+        }
+    }
+    .logout {
+        padding: 18px 35%;
+
+        img {
+            padding-top: 0;
+        }
+    }
 }
