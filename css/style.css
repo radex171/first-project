@@ -3,6 +3,8 @@
 /* Fonts */
 body {
   margin: 0;
+  width: auto;
+  height: auto;
   background-color: #f5f5f2;
   font-family: "Open Sans", Helvetica, Arial;
 }
@@ -620,6 +622,15 @@ body {
   }
 }
 
+.links {
+  height: 850px;
+}
+
+.links .first-button, .links .links-list .second-button {
+  width: 25%;
+  margin: 5% 38%;
+}
+
 @media (max-width: 920px) {
   .container {
     -ms-grid-columns: 1fr 11fr;
@@ -628,18 +639,43 @@ body {
         grid-template-rows: 1fr;
     grid-template-areas: "sidebar content" "sidebar content" "top-bar content";
   }
+  .container .links {
+    height: 1380px;
+  }
+  .container .links ul {
+    padding: 0;
+  }
+  .container .links ul li {
+    margin: 0;
+    padding: 4% 20% 4% 20%;
+    height: 70px;
+    display: block;
+    float: left;
+    text-align: center;
+  }
+  .container .links ul li .name-position, .container .links ul li .link-position, .container .links ul li .icon-position {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .container .links ul li .name-position img, .container .links ul li .link-position img, .container .links ul li .icon-position img {
+    padding: 0;
+    display: block;
+  }
+  .container .links ul li .icon-position {
+    margin: 3% 42%;
+  }
   .sidebar {
-    height: auto;
     padding: 0;
   }
   .sidebar .container-sidebar {
-    height: 75%;
     position: fixed;
   }
   .top-bar {
     width: 190px;
     margin: 0;
     padding: 0;
+    border-top: 2px #9c9c9c solid;
     display: -ms-grid;
     display: grid;
     color: #9c9c9c;
@@ -650,7 +686,7 @@ body {
         grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "profile" "cash" "notification" "logout";
     position: fixed;
-    top: 695px;
+    top: 67%;
   }
   .profile, .cash, .notification, .logout {
     margin: 0;
@@ -665,6 +701,159 @@ body {
   }
   .logout img {
     padding-top: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .content {
+    margin-top: 0;
+  }
+  .content .chart {
+    margin: 0;
+  }
+  .content .chart .table {
+    padding: 0;
+    width: 96%;
+    margin: 0 2%;
+  }
+  .content .chart .table .name-cell {
+    margin: 0 2%;
+    width: 98%;
+  }
+  .content .chart .table .name-cell span {
+    width: 88%;
+  }
+  .content .chart .table .value-cell {
+    width: 10%;
+  }
+  .content .chart .table .value-cell span {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    position: absolute;
+  }
+  .container .sidebar, .container .container-sidebar, .container .top-bar {
+    width: 135px;
+  }
+  .container .sidebar .burger-menu, .container .container-sidebar .burger-menu, .container .top-bar .burger-menu {
+    display: inline-block;
+    width: 100%;
+  }
+  .container .sidebar .burger-menu .text, .container .container-sidebar .burger-menu .text, .container .top-bar .burger-menu .text {
+    float: none;
+    width: 86%;
+    height: 30px;
+    padding: 10px 0 0 14%;
+  }
+  .container .sidebar .burger-menu .button, .container .container-sidebar .burger-menu .button, .container .top-bar .burger-menu .button {
+    left: 46%;
+  }
+  .container .sidebar .list-menu, .container .container-sidebar .list-menu, .container .top-bar .list-menu {
+    height: 280px;
+  }
+  .container .sidebar .list-menu ul, .container .container-sidebar .list-menu ul, .container .top-bar .list-menu ul {
+    margin-top: 6px;
+  }
+  .container .sidebar .list-menu ul li a img, .container .container-sidebar .list-menu ul li a img, .container .top-bar .list-menu ul li a img {
+    padding-left: 14px;
+    margin-right: 6px;
+    float: left;
+  }
+  .container .under-menu p {
+    margin: 3px 8px;
+  }
+  .container .under-menu .listMenagers {
+    margin: 7px 0 0 0;
+  }
+  .container .top-bar {
+    top: 64%;
+    height: 212px;
+  }
+  .container .top-bar .blank-col {
+    display: none;
+  }
+  .container .top-bar .profile {
+    height: 47px;
+  }
+  .container .top-bar .profile img {
+    margin: 0 40%;
+    padding: 7px 0 0 6%;
+  }
+  .container .top-bar .profile .user-name {
+    margin: 6px 0 2px 11%;
+  }
+  .container .top-bar .cash {
+    height: 73px;
+    margin: 2px 0;
+    border-top: 1px #f5f5f2 solid;
+    border-bottom: 1px #f5f5f2 solid;
+  }
+  .container .top-bar .cash img {
+    padding: 8px 0 0 44%;
+  }
+  .container .top-bar .cash .wallet-value {
+    margin: 5px 0 0 23%;
+    font-size: 16px;
+  }
+  .container .top-bar .notification {
+    height: 33px;
+    margin: 8px 0;
+    border-bottom: 1px #f5f5f2 solid;
+  }
+  .container .top-bar .notification img {
+    padding: 0;
+  }
+  .container .top-bar .logout {
+    padding: 4px 30%;
+  }
+  .content {
+    margin-top: 0;
+  }
+  .content .date .date-picker {
+    width: 72%;
+    padding: 32px 0 0 3.8%;
+  }
+  .content .chart {
+    height: 330px;
+  }
+  .content .chart .table {
+    width: 94%;
+    margin: 0;
+  }
+  .content .link-row {
+    margin-top: 5px;
+  }
+  .content .link-row .links-title {
+    height: 34px;
+  }
+  .content .link-row .links-title p {
+    padding: 0;
+    margin-top: 12px;
+    text-align: center;
+  }
+  .content .link-row .links {
+    width: 200px;
+    height: 1040px;
+  }
+  .content .link-row .links .first-button {
+    width: 45%;
+  }
+  .content .link-row .links .second-button {
+    width: 55%;
+    margin: 5% 27%;
+  }
+  .content .link-row ul li {
+    padding: 4% 12.5%;
+    width: 100%;
+  }
+  .content .link-row ul li .link-position {
+    display: inline-block;
+  }
+  .content .link-row ul li .link-position a {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
