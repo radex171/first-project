@@ -48,7 +48,7 @@
 @media (max-width: 920px){
 
     .container {
-        grid-template-columns: 1fr 11fr;
+        grid-template-columns: 2fr 5.7fr;
         grid-template-rows: 1fr;
         grid-template-areas:
         "sidebar content"
@@ -91,14 +91,12 @@
 
     .sidebar {
         padding: 0;
-        .container-sidebar {
-            
-            position: fixed;
-            
-        }
+        position: fixed;
+        
    }
 
    .top-bar {
+    position: fixed;
     width: 190px;
     margin: 0;
     padding: 0;
@@ -113,7 +111,7 @@
     "cash"
     "notification"
     "logout";
-    position: fixed;
+    height: 100vh;
     top:67%;
     }
     .profile, .cash, .notification, .logout {
@@ -141,8 +139,12 @@
 
 @media(max-width: 770px) {
 
+    .container{
+        grid-template-columns: 2fr 3.7fr;
+    }
     .content {
         margin-top: 0;
+        
         .chart {
             margin: 0;
             .table {
@@ -172,7 +174,8 @@
 
     .container {
        position: absolute;
-        
+       grid-template-columns: 2fr 3.4fr;
+
        .sidebar, .container-sidebar, .top-bar {
            width: 135px;
 
@@ -191,20 +194,26 @@
             }
 
             .list-menu {
-                height: 280px;
+                height: 240px;
                 
                 ul {
                     margin-top: 6px;
 
-                    li a img {
+                    li {
+                        height: 25px;
+                        margin: 0;
+                        a img {
                         padding-left: 14px;
                         margin-right: 6px;
                         float: left;
+                        }
                     }
                 }
             }
         }
-
+        .container-sidebar, .top-bar{
+            height: 100vh;
+        }
         .under-menu {
 
             p {
@@ -298,10 +307,11 @@
             }
 
             .links {
-                width: 200px;
-                height: 1040px;
+                width: 100%;
+                height: 1060px;
                 .first-button  {
                     width: 45%;
+                    margin: 5% 26%;
                 }
 
                 .second-button {
@@ -316,7 +326,25 @@
                 .link-position {
                     display: inline-block;
                     a {
-                        font-size: 13px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 321px){
+    .container {
+        grid-template-columns: 2fr 2.7fr;
+    
+        .sidebar {
+            .container-sidebar {
+                .list-menu {
+                    height:200px;
+                    ul li {
+                        height: 16px;
+                        margin: 6px 0;
                     }
                 }
             }

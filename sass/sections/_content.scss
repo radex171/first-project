@@ -7,14 +7,11 @@
     height: 90vh;
     width: 96.8%;
     margin: 30px 2% 0 1.4%;
-    grid-template-rows: 1fr 11fr;
-    grid-template-areas: 
-    "general-statistic "
-    "links";
+    
     grid-gap: 1fr;
 }
 .general-statistic {
-    grid-area: general-statistic;
+   
     width: 100%;
     margin-top: 0;
     display: inline-block;
@@ -173,7 +170,7 @@
 }
 
 .link-row {
-    grid-area: links;
+   
     height: 600px;
 
     .links-title {
