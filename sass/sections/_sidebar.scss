@@ -38,9 +38,11 @@
                     
 
                     &:hover {
-                    background-color: $dark-gray;
+                    background-color: $select-sidebar-menu;
                     border-radius: 0 30px 30px 0;
                     color: white;
+                    border-left: 3px $orange solid;
+                    
                     }
 
                 
@@ -49,16 +51,7 @@
                         font-size: 13px;
                         list-style-type: none;
                         text-decoration: none;
-                        color: grey;
-                    
-                        &:hover{
-                            list-style-type: none ;
-                            border-left: 4px rgb(219, 121, 8) solid;
-                            color: white;
-
-                            img {
-                                filter: invert(100%);
-                            }    
+                        color: grey; 
                         }
                         
                         img {
@@ -70,6 +63,14 @@
                             filter: invert(70%);
                         }
                     }
+                    li:hover a{
+                        list-style-type: none ;
+                        
+                        color: white;
+
+                        img {
+                            filter: invert(100%);
+                        }    
                 }
             }
         }
@@ -90,7 +91,7 @@
 
         .nameMenager {
             font-size: 14px;
-            color: rgb(212, 212, 212);
+            color: $link;
             }
 
         .listMenagers {

@@ -3,7 +3,7 @@
 .content {
     display: grid;
     font-family: $brand-font;
-
+    color: $text;
     height: 90vh;
     width: 96.8%;
     margin: 30px 2% 0 1.4%;
@@ -55,8 +55,11 @@
             height: 39px;
             display: flex;
             flex-wrap: wrap;
-            border: 1px lightgray solid;
-        
+            border: 1px $light-gray solid;
+            
+            &:hover {
+            border-color: $dark-gray;
+            }
             .first-input, .second-input {
                 width: 42%;
                 height: 38px;

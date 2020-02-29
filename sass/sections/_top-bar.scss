@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     display: grid;
-    background: $paragraph-color;
-    color: $dark-gray;
+    background: $dark-gray;
+    color: $text;
     font-weight: bold;
     grid-template-columns: 56% 15fr 4fr 13fr 5fr;
     grid-template-areas:
@@ -72,6 +72,7 @@
             margin: 22px 0 0 5%;
             font-size: 13px;
             float: left;
+            color: $link;
         }
     }
 
@@ -85,3 +86,7 @@
             padding: 22px 0 0 20px ;
         }
     }
+
+.cash:hover, .notification:hover, .profile:hover, .logout:hover {
+    background: $light-gray;
+}
