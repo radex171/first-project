@@ -81,18 +81,19 @@ body {
 }
 
 .sidebar .container-sidebar .list-menu ul li {
-  height: 30px;
-  margin: 4px 0 12px 0;
+  height: 34px;
+  margin: 8px 0;
+  border-left: 3px #191919 solid;
 }
 
 .sidebar .container-sidebar .list-menu ul li:hover {
   background-color: #282828;
-  border-radius: 0 30px 30px 0;
   color: white;
-  border-left: 3px #f58220 solid;
+  border-left-color: #f58220;
 }
 
 .sidebar .container-sidebar .list-menu ul li a {
+  height: 30px;
   margin: 0;
   font-size: 13px;
   list-style-type: none;
@@ -101,12 +102,16 @@ body {
 }
 
 .sidebar .container-sidebar .list-menu ul li img {
-  padding-left: 18px;
-  padding-top: 4px;
-  margin-right: 10px;
-  height: 16px;
-  width: 18px;
+  margin: 5px 0 0 10px;
+  height: 12px;
+  width: 27px;
   filter: invert(70%);
+  float: left;
+}
+
+.sidebar .container-sidebar .list-menu ul li span {
+  padding: 0 0 0 8px;
+  height: 30px;
 }
 
 .sidebar .container-sidebar .list-menu ul li:hover a {

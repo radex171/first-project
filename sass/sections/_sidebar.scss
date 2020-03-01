@@ -30,18 +30,19 @@
                 margin-top: 30px;
                 padding-left: 0;
 
-                li{
-                    height: 30px;
-                    margin: 4px 0 12px 0;
+                li {
+                    height: 34px;
+                    margin: 8px 0;
+                    border-left: 3px $paragraph-color solid;
 
                     &:hover {
                         background-color: $select-sidebar-menu;
-                        border-radius: 0 30px 30px 0;
                         color: white;
-                        border-left: 3px $orange solid;
+                        border-left-color: $orange;
                     }
                 
                     a {
+                        height: 30px;
                         margin: 0;
                         font-size: 13px;
                         list-style-type: none;
@@ -50,12 +51,17 @@
                     }
                         
                         img {
-                            padding-left: 18px;
-                            padding-top: 4px;;
-                            margin-right: 10px;
-                            height: 16px;
-                            width: 18px;
+                            margin: 5px 0 0 10px;
+                            height: 12px;
+                            width: 27px;
                             filter: invert(70%);
+                            float: left;
+                        }
+
+                        span {
+                            padding: 0 0 0 8px;
+                            height: 30px;
+                            
                         }
                     }
                     
