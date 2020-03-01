@@ -560,10 +560,6 @@ body {
   grid-template-areas: "name-link link icon-link";
 }
 
-.links .links-list li:hover {
-  background-color: #f5f5f2;
-}
-
 .links .links-list li .name-position {
   grid-area: name-link;
   padding: 16px 0 0 15px;
@@ -589,11 +585,23 @@ body {
 }
 
 .links .links-list li .icon-position img {
-  display: block;
+  visibility: hidden;
   width: 16px;
   height: 16px;
   float: left;
   padding-left: 19px;
+}
+
+.links .links-list li:hover {
+  background-color: #f5f5f2;
+}
+
+.links .links-list li:hover .icon-position img {
+  visibility: visible;
+}
+
+.links .links-list li:hover .orange-icon {
+  fill: #f58220;
 }
 
 .links .links-list .last-line {
@@ -651,6 +659,12 @@ body {
         grid-template-rows: 1fr;
     grid-template-areas: "sidebar content" "sidebar content" "top-bar content";
   }
+  .container .container-sidebar .list-menu {
+    height: 250px;
+  }
+  .container .container-sidebar .list-menu ul li {
+    height: 23px;
+  }
   .container .links {
     height: 1380px;
   }
@@ -696,10 +710,10 @@ body {
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "profile" "cash" "notification" "logout";
-    height: 100vh;
-    top: 67%;
+    top: 63%;
   }
   .profile, .cash, .notification, .logout {
+    height: 42px;
     margin: 0;
     padding: 0;
     background-color: #191919;
@@ -800,7 +814,7 @@ body {
     display: none;
   }
   .container .top-bar .profile {
-    height: 47px;
+    height: 56px;
   }
   .container .top-bar .profile img {
     margin: 0 40%;
@@ -810,10 +824,7 @@ body {
     margin: 6px 0 2px 11%;
   }
   .container .top-bar .cash {
-    height: 73px;
-    margin: 2px 0;
-    border-top: 1px #f5f5f2 solid;
-    border-bottom: 1px #f5f5f2 solid;
+    height: 83px;
   }
   .container .top-bar .cash img {
     padding: 8px 0 0 44%;
@@ -824,8 +835,6 @@ body {
   }
   .container .top-bar .notification {
     height: 33px;
-    margin: 8px 0;
-    border-bottom: 1px #f5f5f2 solid;
   }
   .container .top-bar .notification img {
     padding: 0;

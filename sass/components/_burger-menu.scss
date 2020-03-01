@@ -6,12 +6,11 @@
     position: relative;
     left: 38px;
     top: 8px;
+
     .hamb-menu {
-        
         display: inline-block;
         cursor: pointer;
         background-color: transparent;
-        
         margin: 0;
 
         .hamb-box {
@@ -26,20 +25,19 @@
                 top: 50%;
                 transform: translateY(-50%);
                 transition: background-color .2s .3s ease-in-out;
-                
             }
 
             .box-line::before,
             .box-line::after {
                 @include box-line;
                 content: '';  
-            } 
+            }
 
             .box-line::before {
                 top: -6px;
                 left: 0;
                 transition: transform .2s .2s ease-in-out;
-                } 
+            } 
 
             .box-line::after {
                 top: 6px;

@@ -6,7 +6,7 @@
     }
 
     .content {
-    
+
         .chart {
             height: 686px;
 
@@ -18,13 +18,15 @@
                     margin: 20px 14%;
                 }
             }
+
             p {
                 margin: 0;
                 width: 100%;
                 text-align: center;
             }
+            
             .chart-images img {
-            width: 80%;
+                width: 80%;
             }
 
             .date {
@@ -37,12 +39,12 @@
     }
 }
 .links {
-
     height: 850px;
+    
     .first-button, .links-list .second-button {
         width: 25%;
         margin: 5% 38%;
-        } 
+    } 
 }
 
 @media (max-width: 920px){
@@ -54,9 +56,18 @@
         "sidebar content"
         "sidebar content"
         "top-bar content";
-
+        
+        .container-sidebar .list-menu {
+            height: 250px;
+    
+            ul li {
+                height: 23px;
+            }
+        }
+    
         .links {
             height: 1380px;
+    
             ul{
                 padding: 0;
                 
@@ -64,10 +75,10 @@
                     margin:0;
                     padding: 4% 20% 4% 20%;
                     height: 70px;
-                    display: block;
-                    
+                    display: block;                
                     float: left;
                     text-align: center;
+                    
                     .name-position, .link-position, .icon-position {
                         display: block;
                         margin: 0;
@@ -77,8 +88,6 @@
                             padding: 0;
                             display: block;
                         }
-                        
-            
                     }  
                     
                     .icon-position {
@@ -92,30 +101,28 @@
     .sidebar {
         padding: 0;
         position: fixed;
-        
    }
 
    .top-bar {
-    position: fixed;
-    width: 190px;
-    margin: 0;
-    padding: 0;
-    border-top: 2px $dark-gray solid;
-    display: grid;
-    color: $dark-gray;
-    font-weight: bold;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "profile"
-    "cash"
-    "notification"
-    "logout";
-    height: 100vh;
-    top:67%;
+        position: fixed;
+        width: 190px;
+        margin: 0;
+        padding: 0;
+        border-top: 2px $dark-gray solid;
+        display: grid;
+        color: $dark-gray;
+        font-weight: bold;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "profile"
+        "cash"
+        "notification"
+        "logout";
+        top:63%;
     }
     .profile, .cash, .notification, .logout {
-        
+        height: 42px;
         margin: 0;
         padding: 0;
         background-color: $paragraph-color;
@@ -127,14 +134,11 @@
     
     .logout {
         padding: 18px 35%;
-        
-        
-
+    
         img {
             padding-top: 0;
         }
     }
-    
 }
 
 @media(max-width: 770px) {
@@ -142,22 +146,27 @@
     .container{
         grid-template-columns: 2fr 3.7fr;
     }
+    
     .content {
         margin-top: 0;
         
         .chart {
             margin: 0;
+    
             .table {
                 padding: 0;
                 width: 96%;
                 margin: 0 2%;
+    
                 .name-cell {
                     margin: 0 2%;
                     width: 98%;
+    
                     span {
                         width:88%;
                     }
                 }
+    
                 .value-cell {
                     width: 10%;
 
@@ -182,12 +191,14 @@
            .burger-menu {
                display: inline-block;
                width: 100%;
+    
                .text {
                    float: none;
                    width: 86%;
                    height: 30px;
                    padding: 10px 0 0 14%;
                }
+    
                .button {
                    left: 46%;
                }
@@ -202,6 +213,7 @@
                     li {
                         height: 25px;
                         margin: 0;
+    
                         a img {
                         padding-left: 14px;
                         margin-right: 6px;
@@ -211,9 +223,11 @@
                 }
             }
         }
+    
         .container-sidebar, .top-bar{
             height: 100vh;
         }
+    
         .under-menu {
 
             p {
@@ -223,19 +237,19 @@
             .listMenagers {
                 margin: 7px 0 0 0;
             }
-
-
         }
 
         .top-bar {
             top: 64%;
             height: 212px;
+            
             .blank-col {
                 display: none;
             }
 
             .profile {
-                height: 47px;
+                height: 56px;
+            
                 img {
                     margin: 0 40%;
                     padding: 7px 0 0 6%;
@@ -247,23 +261,21 @@
             }
 
             .cash {
-                height: 73px;
-                margin: 2px 0 ;
-                border-top: 1px $light-gray solid;
-                border-bottom: 1px $light-gray solid;;
+                height: 83px;
+                
                 img {
                     padding: 8px 0 0 44%;
                 }
+            
                 .wallet-value {
                     margin: 5px 0 0 23%;
                     font-size: 16px;
                 }
             }
+            
             .notification {
                 height: 33px;
-                margin: 8px 0;
-                border-bottom: 1px $light-gray solid;;
-
+            
                 img {
                     padding: 0;
                 }
@@ -285,6 +297,7 @@
                 padding: 32px 0 0 3.8%;
             }
         }
+        
         .chart {
             height: 330px;
 
@@ -299,16 +312,18 @@
             
             .links-title {
             height: 34px;
-                p {
-                    padding: 0;
-                    margin-top: 12px;
-                    text-align: center;
+        
+            p {
+                padding: 0;
+                margin-top: 12px;
+                text-align: center;
                 }
             }
 
             .links {
                 width: 100%;
                 height: 1090px;
+                
                 .first-button  {
                     width: 45%;
                     margin: 5% 26%;
@@ -323,8 +338,10 @@
             ul li {
                 padding: 4% 12.5%;
                 width: 100%;
+                
                 .link-position {
                     display: inline-block;
+                
                     a {
                         font-size: 11px;
                     }
@@ -342,6 +359,7 @@
             .container-sidebar {
                 .list-menu {
                     height:200px;
+    
                     ul li {
                         height: 16px;
                         margin: 6px 0;

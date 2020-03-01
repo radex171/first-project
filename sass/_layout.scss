@@ -1,8 +1,6 @@
 body {
     margin: 0;
-    
-    background-color: $light-gray
-    ;
+    background-color: $light-gray;
     font-family: $brand-font;
 }
 
@@ -18,21 +16,21 @@ body {
     "sidebar top-bar"
     "sidebar content"
     "sidebar content";
-    
 }
+
     .sidebar {
         margin: 0 ;
         width: 190px;
         grid-area: sidebar;  
     }
+    
     .top-bar {
         margin: 0;
         grid-area: top-bar;
-
     }
+
     .content {
-        grid-area: content;
-     
+        grid-area: content; 
     }
 
     //-------------------------//

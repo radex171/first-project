@@ -7,11 +7,10 @@
     height: 90vh;
     width: 96.8%;
     margin: 30px 2% 0 1.4%;
-    
     grid-gap: 1fr;
 }
-.general-statistic {
-   
+
+.general-statistic {   
     width: 100%;
     margin-top: 0;
     display: inline-block;
@@ -60,6 +59,7 @@
             &:hover {
             border-color: $dark-gray;
             }
+
             .first-input, .second-input {
                 width: 42%;
                 height: 38px;
@@ -119,6 +119,7 @@
         padding-top: 40px;
         display: flex;
         flex-wrap: wrap;
+        
         .name-cell {
             height: 24px;
             width: 315px;
@@ -169,16 +170,13 @@
 
     .links {
         width: 100%;
-
     }
 }
 
 .link-row {
-   
     height: 600px;
 
     .links-title {
-       
         width: 100%;
         margin-top: 0;
         display: inline-block;
@@ -232,9 +230,6 @@
             grid-template-areas:
             "name-link link icon-link";
             
-            &:hover {
-                background-color: $light-gray;
-            }
             .name-position {
                 grid-area: name-link;
                 padding: 16px 0 0 15px;
@@ -253,24 +248,33 @@
                 }
             }
 
-            
-
             .icon-position {
                 grid-area: icon-link;
                 width: 91px;
                 padding: 22px 0 0 17%;
 
                 img {
-                    display: block;
+                    visibility: hidden;
                     width: 16px;
                     height: 16px;
                     float: left;
-                    padding-left: 19px;
-                   
+                    padding-left: 19px;                   
                 }
             }
-            
+
+            &:hover {
+                background-color: $light-gray;
+
+                .icon-position img {
+                    visibility: visible;
+                }
+
+                .orange-icon {
+                    fill: $orange;
+                }
+            }
         }
+
         .last-line {
             border-bottom: 1px lightgray solid;
         }
