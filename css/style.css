@@ -658,11 +658,11 @@ body {
 
 @media (max-width: 920px) {
   .container {
-    -ms-grid-columns: 2fr 5.7fr;
-        grid-template-columns: 2fr 5.7fr;
+    -ms-grid-columns: 2fr 5.7fr 1fr;
+        grid-template-columns: 2fr 5.7fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    grid-template-areas: "sidebar content" "sidebar content" "top-bar content";
+    grid-template-areas: "sidebar content" "top-bar content" "top-bar content";
   }
   .container .container-sidebar .list-menu {
     height: 250px;
@@ -717,6 +717,9 @@ body {
     grid-template-areas: "profile" "cash" "notification" "logout";
     top: 63%;
   }
+  .correct-top-bar {
+    top: 15%;
+  }
   .profile, .cash, .notification, .logout {
     height: 42px;
     margin: 0;
@@ -735,6 +738,9 @@ body {
 }
 
 @media (max-width: 770px) {
+  .correct-top-bar {
+    top: 15%;
+  }
   .container {
     -ms-grid-columns: 2fr 3.7fr;
         grid-template-columns: 2fr 3.7fr;
@@ -798,15 +804,16 @@ body {
     margin: 0;
   }
   .container .sidebar .list-menu ul li a img, .container .container-sidebar .list-menu ul li a img, .container .top-bar .list-menu ul li a img {
-    padding-left: 14px;
-    margin-right: 6px;
+    padding-left: 2px;
+    margin-right: 0;
     float: left;
   }
-  .container .container-sidebar, .container .top-bar {
-    height: 100vh;
+  .container .sidebar .list-menu ul li span, .container .container-sidebar .list-menu ul li span, .container .top-bar .list-menu ul li span {
+    padding-left: 2px;
+    font-size: 13px;
   }
   .container .under-menu p {
-    margin: 3px 8px;
+    margin: 1px 8px 0 0;
   }
   .container .under-menu .listMenagers {
     margin: 7px 0 0 0;
@@ -846,6 +853,9 @@ body {
   }
   .container .top-bar .logout {
     padding: 4px 30%;
+  }
+  .container .correct-top-bar {
+    top: 25%;
   }
   .content {
     margin-top: 0;
@@ -894,9 +904,23 @@ body {
   .content .link-row ul li .link-position a {
     font-size: 11px;
   }
+  .close-menu {
+    visibility: hidden;
+    max-width: 40px;
+  }
+  .close-position-hamb-menu {
+    left: 30%;
+  }
+  .content-max-width {
+    -ms-grid-columns: 2fr 9fr;
+        grid-template-columns: 2fr 9fr;
+  }
 }
 
 @media (max-width: 321px) {
+  .correct-top-bar {
+    top: 15%;
+  }
   .container {
     -ms-grid-columns: 2fr 2.7fr;
         grid-template-columns: 2fr 2.7fr;
