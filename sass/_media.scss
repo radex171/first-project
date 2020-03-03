@@ -103,6 +103,17 @@
     .sidebar {
         padding: 0;
         position: fixed;
+
+       .container-sidebar .list-menu ul li {
+
+            img {
+                margin: 5px 0 0 10px;
+            }
+
+            .link-title-sidemenu {
+                padding-top: 3px;
+            }
+        }
    }
 
    .top-bar {
@@ -251,11 +262,11 @@
 
                     li {
                         height: 25px;
-                        margin: 0;
+                        margin: 5px 0;
     
                         a img {
                         padding-left: 2px;
-                        margin-right: 0;
+                        margin: 6px 0 0 2px;
                         float: left;
                         }
                         span {
@@ -406,7 +417,14 @@
     .content-max-width {
         grid-template-columns: 0fr 9fr;
     }
-    
+    .logout {
+        padding: 0;
+
+        img{
+            padding: 0;
+            padding-left: 21px;
+        }
+    }
 
 }
 
@@ -424,7 +442,7 @@
                     height:200px;
     
                     ul li {
-                        height: 16px;
+                        height: 22px;
                         margin: 6px 0;
                     }
                 }
@@ -454,5 +472,15 @@
         width: 85% !important;
         margin: 10% 15% !important;
     }
-    
+    .profile, .cash, .notification, .logout {
+        width: 135px;
+    }
+    .logout {
+        padding: 0 !important;
+
+        img{
+            padding: 0;
+            padding-left: 61px;
+        }
+    }
 }

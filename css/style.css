@@ -102,14 +102,18 @@ body {
 }
 
 .sidebar .container-sidebar .list-menu ul li img {
-  margin: 5px 0 0 10px;
-  height: 12px;
+  margin: 11px 0 0 10px;
+  height: 13px;
   width: 27px;
   filter: invert(70%);
   float: left;
 }
 
-.sidebar .container-sidebar .list-menu ul li span {
+.sidebar .container-sidebar .list-menu ul li .link-title-sidemenu {
+  padding-top: 9px;
+}
+
+.sidebar .container-sidebar .list-menu ul li .link-title-sidemenu span {
   padding: 0 0 0 8px;
   height: 30px;
 }
@@ -701,6 +705,12 @@ body {
     padding: 0;
     position: fixed;
   }
+  .sidebar .container-sidebar .list-menu ul li img {
+    margin: 5px 0 0 10px;
+  }
+  .sidebar .container-sidebar .list-menu ul li .link-title-sidemenu {
+    padding-top: 3px;
+  }
   .top-bar {
     position: fixed;
     width: 190px;
@@ -829,11 +839,11 @@ body {
   }
   .container .sidebar .list-menu ul li, .container .container-sidebar .list-menu ul li, .container .top-bar .list-menu ul li {
     height: 25px;
-    margin: 0;
+    margin: 5px 0;
   }
   .container .sidebar .list-menu ul li a img, .container .container-sidebar .list-menu ul li a img, .container .top-bar .list-menu ul li a img {
     padding-left: 2px;
-    margin-right: 0;
+    margin: 6px 0 0 2px;
     float: left;
   }
   .container .sidebar .list-menu ul li span, .container .container-sidebar .list-menu ul li span, .container .top-bar .list-menu ul li span {
@@ -946,6 +956,13 @@ body {
     -ms-grid-columns: 0fr 9fr;
         grid-template-columns: 0fr 9fr;
   }
+  .logout {
+    padding: 0;
+  }
+  .logout img {
+    padding: 0;
+    padding-left: 21px;
+  }
 }
 
 @media (max-width: 321px) {
@@ -960,7 +977,7 @@ body {
     height: 200px;
   }
   .container .sidebar .container-sidebar .list-menu ul li {
-    height: 16px;
+    height: 22px;
     margin: 6px 0;
   }
   .close-menu {
@@ -984,6 +1001,16 @@ body {
   .second-button {
     width: 85% !important;
     margin: 10% 15% !important;
+  }
+  .profile, .cash, .notification, .logout {
+    width: 135px;
+  }
+  .logout {
+    padding: 0 !important;
+  }
+  .logout img {
+    padding: 0;
+    padding-left: 61px;
   }
 }
 /*# sourceMappingURL=style.css.map */
